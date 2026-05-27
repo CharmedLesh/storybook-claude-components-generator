@@ -1,9 +1,44 @@
 {
   "permissions": {
     "allow": [
+      "mcp__playwright",
       "Bash(npm --version)",
       "Bash(npx --version)",
-      "Bash(npx create-next-app@latest . --typescript --tailwind --app --src-dir --import-alias \"@/*\" --use-npm --eslint --yes --turbopack)"
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --src-dir --import-alias \"@/*\" --use-npm --eslint --yes --turbopack)",
+      "Bash(npx storybook@latest init --yes --skip-install)",
+      "Bash(npm install *)",
+      "Skill(claude-api)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code} in %{time_total}s\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code} in %{time_total}s\\\\n\" http://localhost:6006/)",
+      "Bash(curl *)",
+      "WebSearch",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npm uninstall *)",
+      "Bash(taskkill *)",
+      "Bash(grep -oE 'updatedInput[^,\\)}\\\\n]{0,200}' node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs)",
+      "Bash(grep -oE '\"allow\"[^|]{0,300}' node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs)",
+      "Bash(grep -oE 'behavior:K\\\\.literal\\\\\\(\"allow\"\\\\\\)[^|]{0,500}' node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs)",
+      "Bash(grep -oE 'K\\\\.literal\\\\\\(\"allow\"\\\\\\)[^,\\)}]{0,400}' node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs)",
+      "Bash(grep -ohE 'literal\\\\\\(\"allow\"\\\\\\)[^|]{0,600}' node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs)",
+      "Bash(grep -ohE '\"behavior\"[^|]{0,600}' node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs)",
+      "Bash(grep -ohE 'updatedInput[^,\\)}]{0,500}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
+      "Bash(grep -ohE '\\\\{[^{}]{0,300}updatedInput[^{}]{0,500}\\\\}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
+      "Bash(grep -ohE 'literal\\\\\\(\"allow\"\\\\\\)[^|]{0,300}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
+      "Bash(grep -ohE '\"allow\"[^|]{0,300}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
+      "Bash(grep -ohE 'literal..allow[^|]{0,300}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
+      "Bash(grep -ohE 'union[^\\)]{0,500}allow[^\\)]{0,500}deny[^\\)]{0,200}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
+      "Bash(grep -ohE '\\\\.object\\\\\\(\\\\{behavior[^}]{0,400}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
+      "Bash(grep -ohE 'object\\\\\\(\\\\{[^}]{0,5}behavior[^}]{0,500}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
+      "Bash(grep -ohE 'behavior:[^,}]{0,300}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
+      "Bash(grep -ohE 'can_use_tool[^,}]{0,300}' node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs)",
+      "Bash(grep -ohE 'can_use_tool\"\\\\\\)\\\\{[^}]{0,800}' node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs)",
+      "Bash(grep -ohE 'can_use_tool\"\\\\\\)\\\\{[^{]{0,1500}' node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs)",
+      "Bash(awk '/can_use_tool/{found=1} found{print; if\\(++count>5\\) exit}' node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs)",
+      "Bash(grep -ohE 'can_use_tool[^,}]{0,300}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
+      "Bash(grep -ohE 'permission.{0,10}result|can_use_tool.{0,200}schema|safeParse[^,]{0,200}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
+      "Bash(npx vitest *)"
     ]
   }
 }

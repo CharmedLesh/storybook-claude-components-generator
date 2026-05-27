@@ -1,0 +1,91 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - heading "Claude Components" [level=1] [ref=e6]
+          - paragraph [ref=e7]:
+            - text: Writes to
+            - code [ref=e8]: src/generated/
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - generic [ref=e11]: Model
+            - combobox "Model" [ref=e12]:
+              - option "Opus 4.7"
+              - option "Sonnet 4.6" [selected]
+              - option "Haiku 4.5"
+          - button "Clear" [disabled] [ref=e13]
+      - generic [ref=e14]:
+        - heading "Pick a default model" [level=2] [ref=e15]
+        - paragraph [ref=e16]: You can change this any time in the header.
+        - generic [ref=e17]:
+          - generic [ref=e18] [cursor=pointer]:
+            - radio "Opus 4.7 Highest quality. Best for complex components." [ref=e19]
+            - generic [ref=e20]:
+              - generic [ref=e21]: Opus 4.7
+              - generic [ref=e22]: Highest quality. Best for complex components.
+          - generic [ref=e23] [cursor=pointer]:
+            - radio "Sonnet 4.6 Balanced speed and quality. Good default." [checked] [ref=e24]
+            - generic [ref=e25]:
+              - generic [ref=e26]: Sonnet 4.6
+              - generic [ref=e27]: Balanced speed and quality. Good default.
+          - generic [ref=e28] [cursor=pointer]:
+            - radio "Haiku 4.5 Fastest and cheapest. Good for small tweaks." [ref=e29]
+            - generic [ref=e30]:
+              - generic [ref=e31]: Haiku 4.5
+              - generic [ref=e32]: Fastest and cheapest. Good for small tweaks.
+        - button "Use Sonnet 4.6" [ref=e33]
+      - generic [ref=e35]:
+        - textbox "Describe the component you want. Cmd/Ctrl+Enter to send." [ref=e36]
+        - generic [ref=e37]:
+          - generic [ref=e38]: Cmd/Ctrl + Enter to send
+          - button "Send" [disabled] [ref=e39]
+    - separator "Drag to resize panels" [ref=e40]
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Storybook
+          - generic [ref=e46]: http://localhost:6006
+        - generic [ref=e47]:
+          - button "Reload" [ref=e48]
+          - link "Open" [ref=e49] [cursor=pointer]:
+            - /url: http://localhost:6006
+      - iframe [ref=e50]:
+        - generic [ref=f3e3]:
+          - generic [ref=f3e4]:
+            - banner "Storybook" [ref=f3e6]:
+              - heading "Storybook" [level=1] [ref=f3e7]
+              - img
+              - generic [ref=f3e11]:
+                - generic [ref=f3e13]:
+                  - link "Skip to content" [ref=f3e14] [cursor=pointer]:
+                    - /url: "#storybook-preview-wrapper"
+                  - link "Storybook" [ref=f3e16] [cursor=pointer]:
+                    - /url: ./
+                    - img "Storybook" [ref=f3e17]
+                  - switch "Settings" [ref=f3e22] [cursor=pointer]:
+                    - img [ref=f3e23]
+                - generic [ref=f3e26]: Search for components
+                - search [ref=f3e27]:
+                  - combobox "Search for components" [ref=f3e28]:
+                    - generic:
+                      - img
+                    - searchbox "Search for components" [ref=f3e29]
+                    - code: ⌃ K
+                  - button "Create a new story" [ref=f3e30] [cursor=pointer]:
+                    - img [ref=f3e31]
+                - navigation "Stories" [ref=f3e34]:
+                  - heading "Stories" [level=2] [ref=f3e35]
+            - separator "Sidebar resize handle" [ref=f3e55]
+          - generic [ref=f3e57]:
+            - region "Toolbar" [ref=f3e58]:
+              - heading "Toolbar" [level=2] [ref=f3e59]
+              - toolbar [ref=f3e60]
+            - main "Main preview area" [ref=f3e61]:
+              - heading "Main preview area" [level=2] [ref=f3e62]
+              - generic [ref=f3e63]:
+                - progressbar "Content is loading..." [ref=f3e65]
+                - iframe [ref=f3e70]:
+                  
+  - button "Open Next.js Dev Tools" [ref=e56] [cursor=pointer]:
+    - img [ref=e57]

@@ -1,0 +1,523 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - heading "Claude Components" [level=1] [ref=e6]
+          - paragraph [ref=e7]:
+            - text: Writes to
+            - code [ref=e8]: src/generated/
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - generic [ref=e11]: Model
+            - combobox "Model" [ref=e12]:
+              - option "Opus 4.7"
+              - option "Sonnet 4.6" [selected]
+              - option "Haiku 4.5"
+          - button "Clear" [disabled] [ref=e13]
+      - generic [ref=e14]:
+        - heading "Pick a default model" [level=2] [ref=e15]
+        - paragraph [ref=e16]: You can change this any time in the header.
+        - generic [ref=e17]:
+          - generic [ref=e18] [cursor=pointer]:
+            - radio "Opus 4.7 Highest quality. Best for complex components." [ref=e19]
+            - generic [ref=e20]:
+              - generic [ref=e21]: Opus 4.7
+              - generic [ref=e22]: Highest quality. Best for complex components.
+          - generic [ref=e23] [cursor=pointer]:
+            - radio "Sonnet 4.6 Balanced speed and quality. Good default." [checked] [ref=e24]
+            - generic [ref=e25]:
+              - generic [ref=e26]: Sonnet 4.6
+              - generic [ref=e27]: Balanced speed and quality. Good default.
+          - generic [ref=e28] [cursor=pointer]:
+            - radio "Haiku 4.5 Fastest and cheapest. Good for small tweaks." [ref=e29]
+            - generic [ref=e30]:
+              - generic [ref=e31]: Haiku 4.5
+              - generic [ref=e32]: Fastest and cheapest. Good for small tweaks.
+        - button "Use Sonnet 4.6" [ref=e33]
+      - generic [ref=e35]:
+        - textbox "Describe the component you want. Cmd/Ctrl+Enter to send." [ref=e36]
+        - generic [ref=e37]:
+          - generic [ref=e38]: Cmd/Ctrl + Enter to send
+          - button "Send" [disabled] [ref=e39]
+    - separator "Drag to resize panels" [ref=e40]
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Storybook
+          - generic [ref=e46]: http://localhost:6006
+        - generic [ref=e47]:
+          - button "Reload" [ref=e48]
+          - link "Open" [ref=e49] [cursor=pointer]:
+            - /url: http://localhost:6006
+      - iframe [active] [ref=e50]:
+        - generic [ref=f1e3]:
+          - generic [ref=f1e4]:
+            - banner "Storybook" [ref=f1e6]:
+              - heading "Storybook" [level=1] [ref=f1e7]
+              - img
+              - generic [ref=f1e10]:
+                - generic [ref=f1e11]:
+                  - generic [ref=f1e12]:
+                    - generic [ref=f1e13]:
+                      - link "Skip to content" [ref=f1e14] [cursor=pointer]:
+                        - /url: "#storybook-preview-wrapper"
+                      - link "Storybook" [ref=f1e16] [cursor=pointer]:
+                        - /url: ./
+                        - img "Storybook" [ref=f1e17]
+                      - switch "Settings" [ref=f1e22] [cursor=pointer]:
+                        - img [ref=f1e23]
+                    - generic [ref=f1e28]:
+                      - generic [ref=f1e30] [cursor=pointer]:
+                        - button "Open onboarding guide" [ref=f1e34]:
+                          - img [ref=f1e36]
+                          - strong [ref=f1e38]: Get started
+                        - generic [ref=f1e39]:
+                          - button "Collapse onboarding guide" [expanded] [ref=f1e40]:
+                            - img [ref=f1e41]
+                          - button "29% completed" [ref=f1e43]:
+                            - generic [ref=f1e44]:
+                              - img [ref=f1e45]
+                              - img [ref=f1e47]
+                            - generic [ref=f1e50]: 29%
+                      - list [ref=f1e52]:
+                        - listitem [ref=f1e53]:
+                          - button "Open onboarding guide for Set up with AI" [ref=f1e54] [cursor=pointer]:
+                            - img [ref=f1e56]
+                            - generic [ref=f1e60]: Set up with AI
+                          - button "Copy prompt"
+                        - listitem [ref=f1e61]:
+                          - button "Open onboarding guide for Check responsiveness with Viewports" [ref=f1e62] [cursor=pointer]:
+                            - img [ref=f1e64]
+                            - generic [ref=f1e67]: Check responsiveness with Viewports
+                        - listitem [ref=f1e68]:
+                          - button "Open onboarding guide for Share your Storybook for feedback" [ref=f1e69] [cursor=pointer]:
+                            - img [ref=f1e71]
+                            - generic [ref=f1e74]: Share your Storybook for feedback
+                          - button "Share"
+                  - generic [ref=f1e75]: Search for components
+                  - search [ref=f1e76]:
+                    - combobox "Search for components" [ref=f1e77]:
+                      - generic:
+                        - img
+                      - searchbox "Search for components" [ref=f1e78]
+                      - code: ⌃ K
+                      - button "Tag filters" [ref=f1e80] [cursor=pointer]:
+                        - img [ref=f1e81]
+                    - button "Create a new story" [ref=f1e83] [cursor=pointer]:
+                      - img [ref=f1e84]
+                  - switch "Review new stories" [ref=f1e87] [cursor=pointer]:
+                    - img [ref=f1e88]
+                    - text: Review new stories
+                  - navigation "Stories" [ref=f1e91]:
+                    - heading "Stories" [level=2] [ref=f1e92]
+                    - generic [ref=f1e94]:
+                      - generic [ref=f1e95]:
+                        - button "Welcome" [ref=f1e96] [cursor=pointer]:
+                          - generic [ref=f1e97]:
+                            - img [ref=f1e99]
+                            - img [ref=f1e101]
+                          - text: Welcome
+                        - 'button "Change status: New" [ref=f1e103] [cursor=pointer]':
+                          - img [ref=f1e104]
+                      - link "Configure your project" [ref=f1e107] [cursor=pointer]:
+                        - /url: /?path=/docs/configure-your-project--docs
+                        - img [ref=f1e109]
+                        - text: Configure your project
+                      - generic [ref=f1e111]:
+                        - button "Collapse" [expanded] [ref=f1e112] [cursor=pointer]:
+                          - img [ref=f1e114]
+                          - text: Components
+                        - button "Collapse all" [ref=f1e353] [cursor=pointer]:
+                          - img [ref=f1e354]
+                      - generic [ref=f1e119]:
+                        - button "Toggler" [expanded] [ref=f1e120] [cursor=pointer]:
+                          - generic [ref=f1e121]:
+                            - img [ref=f1e123]
+                            - img [ref=f1e125]
+                          - text: Toggler
+                        - 'button "Change status: New" [ref=f1e127] [cursor=pointer]':
+                          - img [ref=f1e128]
+                      - link "Docs" [ref=f1e265] [cursor=pointer]:
+                        - /url: /?path=/docs/components-toggler--docs
+                        - img [ref=f1e267]
+                        - text: Docs
+                      - generic [ref=f1e270]:
+                        - link "No Label" [ref=f1e271] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--no-label
+                          - img [ref=f1e273]
+                          - text: No Label
+                        - 'button "Change status: New" [ref=f1e275] [cursor=pointer]':
+                          - img [ref=f1e276]
+                      - generic [ref=f1e278]:
+                        - link "Label Top" [ref=f1e279] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--label-top
+                          - img [ref=f1e281]
+                          - text: Label Top
+                        - 'button "Change status: New" [ref=f1e283] [cursor=pointer]':
+                          - img [ref=f1e284]
+                      - generic [ref=f1e286]:
+                        - link "Label Left" [ref=f1e287] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--label-left
+                          - img [ref=f1e289]
+                          - text: Label Left
+                        - 'button "Change status: New" [ref=f1e291] [cursor=pointer]':
+                          - img [ref=f1e292]
+                      - generic [ref=f1e294]:
+                        - link "Label Right" [ref=f1e295] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--label-right
+                          - img [ref=f1e297]
+                          - text: Label Right
+                        - 'button "Change status: New" [ref=f1e299] [cursor=pointer]':
+                          - img [ref=f1e300]
+                      - generic [ref=f1e302]:
+                        - link "Disabled" [ref=f1e303] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--disabled
+                          - img [ref=f1e305]
+                          - text: Disabled
+                        - 'button "Change status: New" [ref=f1e307] [cursor=pointer]':
+                          - img [ref=f1e308]
+                      - generic [ref=f1e310]:
+                        - link "Disabled Checked" [ref=f1e311] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--disabled-checked
+                          - img [ref=f1e313]
+                          - text: Disabled Checked
+                        - 'button "Change status: New" [ref=f1e315] [cursor=pointer]':
+                          - img [ref=f1e316]
+                      - generic [ref=f1e318]:
+                        - link "Small" [ref=f1e319] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--small
+                          - img [ref=f1e321]
+                          - text: Small
+                        - 'button "Change status: New" [ref=f1e323] [cursor=pointer]':
+                          - img [ref=f1e324]
+                      - generic [ref=f1e326]:
+                        - link "Large" [ref=f1e327] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--large
+                          - img [ref=f1e329]
+                          - text: Large
+                        - 'button "Change status: New" [ref=f1e331] [cursor=pointer]':
+                          - img [ref=f1e332]
+                      - generic [ref=f1e130]:
+                        - button "Tooltip" [expanded] [active] [ref=f1e131] [cursor=pointer]:
+                          - generic [ref=f1e132]:
+                            - img [ref=f1e134]
+                            - img [ref=f1e136]
+                          - text: Tooltip
+                        - button "Open context menu" [ref=f1e356] [cursor=pointer]:
+                          - img [ref=f1e357]
+                      - generic [ref=f1e359]:
+                        - link "Docs" [ref=f1e360] [cursor=pointer]:
+                          - /url: /?path=/docs/components-tooltip--docs
+                          - img [ref=f1e362]
+                          - text: Docs
+                        - link "Skip to content" [ref=f1e364] [cursor=pointer]:
+                          - /url: "#storybook-preview-wrapper"
+                      - generic [ref=f1e365]:
+                        - link "Top" [ref=f1e366] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--top
+                          - img [ref=f1e368]
+                          - text: Top
+                        - 'button "Change status: New" [ref=f1e370] [cursor=pointer]':
+                          - img [ref=f1e371]
+                      - generic [ref=f1e373]:
+                        - link "Bottom" [ref=f1e374] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--bottom
+                          - img [ref=f1e376]
+                          - text: Bottom
+                        - 'button "Change status: New" [ref=f1e378] [cursor=pointer]':
+                          - img [ref=f1e379]
+                      - generic [ref=f1e381]:
+                        - link "Left" [ref=f1e382] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--left
+                          - img [ref=f1e384]
+                          - text: Left
+                        - 'button "Change status: New" [ref=f1e386] [cursor=pointer]':
+                          - img [ref=f1e387]
+                      - generic [ref=f1e389]:
+                        - link "Right" [ref=f1e390] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--right
+                          - img [ref=f1e392]
+                          - text: Right
+                        - 'button "Change status: New" [ref=f1e394] [cursor=pointer]':
+                          - img [ref=f1e395]
+                      - generic [ref=f1e397]:
+                        - link "Small" [ref=f1e398] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--small
+                          - img [ref=f1e400]
+                          - text: Small
+                        - 'button "Change status: New" [ref=f1e402] [cursor=pointer]':
+                          - img [ref=f1e403]
+                      - generic [ref=f1e405]:
+                        - link "Large" [ref=f1e406] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--large
+                          - img [ref=f1e408]
+                          - text: Large
+                        - 'button "Change status: New" [ref=f1e410] [cursor=pointer]':
+                          - img [ref=f1e411]
+                      - generic [ref=f1e141]:
+                        - button "Collapse" [expanded] [ref=f1e142] [cursor=pointer]:
+                          - img [ref=f1e144]
+                          - text: Example
+                        - button "Expand all" [ref=f1e146] [cursor=pointer]:
+                          - img [ref=f1e147]
+                      - generic [ref=f1e149]:
+                        - button "Button" [ref=f1e150] [cursor=pointer]:
+                          - generic [ref=f1e151]:
+                            - img [ref=f1e153]
+                            - img [ref=f1e155]
+                          - text: Button
+                        - 'button "Change status: New" [ref=f1e157] [cursor=pointer]':
+                          - img [ref=f1e158]
+                      - generic [ref=f1e160]:
+                        - button "Header" [ref=f1e161] [cursor=pointer]:
+                          - generic [ref=f1e162]:
+                            - img [ref=f1e164]
+                            - img [ref=f1e166]
+                          - text: Header
+                        - 'button "Change status: New" [ref=f1e168] [cursor=pointer]':
+                          - img [ref=f1e169]
+                      - generic [ref=f1e171]:
+                        - button "Page" [ref=f1e172] [cursor=pointer]:
+                          - generic [ref=f1e173]:
+                            - img [ref=f1e175]
+                            - img [ref=f1e177]
+                          - text: Page
+                        - 'button "Change status: New" [ref=f1e179] [cursor=pointer]':
+                          - img [ref=f1e180]
+                - region "Component tests" [ref=f1e183]:
+                  - generic [ref=f1e184]:
+                    - heading "Component tests" [level=2] [ref=f1e185]
+                    - generic [ref=f1e186] [cursor=pointer]:
+                      - button "Run tests" [ref=f1e190]:
+                        - img [ref=f1e192]
+                        - text: Run tests
+                      - generic [ref=f1e195]:
+                        - button "Expand testing module" [ref=f1e196]:
+                          - img [ref=f1e197]
+                        - button "Clear all statuses" [ref=f1e199]:
+                          - img [ref=f1e200]
+                    - generic [ref=f1e203]:
+                      - generic [ref=f1e206]:
+                        - generic [ref=f1e207]: Visual tests
+                        - button "Set up visual tests" [ref=f1e209]
+                      - generic [ref=f1e211]:
+                        - generic [ref=f1e212]:
+                          - generic [ref=f1e213]:
+                            - generic [ref=f1e214]: Run component tests
+                            - generic [ref=f1e215]: Not run
+                          - generic [ref=f1e216]:
+                            - switch "Watch mode" [ref=f1e217] [cursor=pointer]:
+                              - img [ref=f1e218]
+                            - button "Start test run" [ref=f1e221] [cursor=pointer]:
+                              - img [ref=f1e222]
+                        - list [ref=f1e224]:
+                          - listitem [ref=f1e225]:
+                            - generic [ref=f1e226]:
+                              - checkbox "Interactions" [checked] [disabled] [ref=f1e228]
+                              - generic [ref=f1e229]: Interactions
+                            - button "Run tests to see results" [disabled] [ref=f1e230]
+                          - listitem [ref=f1e232]:
+                            - generic [ref=f1e233] [cursor=pointer]:
+                              - checkbox "Coverage" [ref=f1e235]
+                              - generic [ref=f1e236]: Coverage
+                            - button "Coverage unavailable, run tests first" [disabled] [ref=f1e237]
+                          - listitem [ref=f1e239]:
+                            - generic [ref=f1e240] [cursor=pointer]:
+                              - checkbox "Accessibility" [ref=f1e242]
+                              - generic [ref=f1e243]: Accessibility
+                            - button "Run tests to see accessibility results" [disabled] [ref=f1e244]
+            - separator "Sidebar resize handle" [ref=f1e246]
+          - generic [ref=f1e248]:
+            - region "Toolbar" [ref=f1e249]:
+              - heading "Toolbar" [level=2] [ref=f1e250]
+              - toolbar [ref=f1e251]:
+                - generic [ref=f1e334]:
+                  - switch "Grid visibility" [ref=f1e335] [cursor=pointer]:
+                    - img [ref=f1e336]
+                  - button "Preview background" [ref=f1e338] [cursor=pointer]:
+                    - img [ref=f1e339]
+                  - switch "Outline tool" [ref=f1e342] [cursor=pointer]:
+                    - img [ref=f1e343]
+                - generic [ref=f1e252]:
+                  - button "Enter full screen" [ref=f1e345] [cursor=pointer]:
+                    - img [ref=f1e346]
+                  - button "Open in editor" [ref=f1e348] [cursor=pointer]:
+                    - img [ref=f1e349]
+                  - button "Share" [ref=f1e253] [cursor=pointer]
+            - main "Main preview area" [ref=f1e254]:
+              - heading "Main preview area" [level=2] [ref=f1e255]
+              - generic [ref=f1e259]:
+                - link "Skip to sidebar" [ref=f1e352] [cursor=pointer]:
+                  - /url: "#components-tooltip--docs"
+                - iframe [ref=f1e263]:
+                  - generic [ref=f2e316]:
+                    - heading "Tooltip" [level=1] [ref=f2e317]
+                    - generic [ref=f2e318]:
+                      - generic [ref=f2e319]:
+                        - toolbar [ref=f2e320]:
+                          - generic [ref=f2e321]:
+                            - generic [ref=f2e322]:
+                              - button "Reload story" [ref=f2e323] [cursor=pointer]:
+                                - img [ref=f2e324]
+                              - button "Zoom in" [ref=f2e326] [cursor=pointer]:
+                                - img [ref=f2e327]
+                              - button "Zoom out" [ref=f2e330] [cursor=pointer]:
+                                - img [ref=f2e331]
+                              - button "Reset zoom" [ref=f2e334] [cursor=pointer]:
+                                - img [ref=f2e335]
+                            - link "Open canvas in new tab" [ref=f2e338] [cursor=pointer]:
+                              - /url: iframe.html?id=components-tooltip--top
+                              - img [ref=f2e339]
+                        - generic [ref=f2e350]: i
+                      - generic [ref=f2e352]:
+                        - switch "Show code" [ref=f2e353] [cursor=pointer]:
+                          - img [ref=f2e354]
+                          - text: Show code
+                        - button "Copy code" [ref=f2e356] [cursor=pointer]:
+                          - img [ref=f2e357]
+                          - text: Copy code
+                    - generic [ref=f2e360]:
+                      - button "Reset controls" [ref=f2e362] [cursor=pointer]:
+                        - img [ref=f2e363]
+                      - table [ref=f2e365]:
+                        - rowgroup [ref=f2e366]:
+                          - row "Name Description Default Control" [ref=f2e367]:
+                            - columnheader "Name" [ref=f2e368]
+                            - columnheader "Description" [ref=f2e369]
+                            - columnheader "Default" [ref=f2e370]
+                            - columnheader "Control" [ref=f2e371]
+                        - rowgroup [ref=f2e372]:
+                          - row "text* string - Tooltip on top" [ref=f2e373]:
+                            - cell "text*" [ref=f2e374]
+                            - cell "string" [ref=f2e375]:
+                              - generic [ref=f2e378]: string
+                            - cell "-" [ref=f2e379]
+                            - cell "Tooltip on top" [ref=f2e380]:
+                              - textbox [ref=f2e382]:
+                                - /placeholder: Edit string...
+                                - text: Tooltip on top
+                          - row "position union 'top' position" [ref=f2e383]:
+                            - cell "position" [ref=f2e384]
+                            - cell "union" [ref=f2e385]:
+                              - generic [ref=f2e388]: union
+                            - cell "'top'" [ref=f2e389]:
+                              - generic [ref=f2e391]: "'top'"
+                            - cell "position" [ref=f2e392]:
+                              - group "position" [ref=f2e393]:
+                                - generic [ref=f2e394]: position
+                                - generic [ref=f2e395] [cursor=pointer]:
+                                  - radio "top" [checked] [ref=f2e396]
+                                  - generic [ref=f2e397]: top
+                                - generic [ref=f2e398] [cursor=pointer]:
+                                  - radio "bottom" [ref=f2e399]
+                                  - generic [ref=f2e400]: bottom
+                                - generic [ref=f2e401] [cursor=pointer]:
+                                  - radio "left" [ref=f2e402]
+                                  - generic [ref=f2e403]: left
+                                - generic [ref=f2e404] [cursor=pointer]:
+                                  - radio "right" [ref=f2e405]
+                                  - generic [ref=f2e406]: right
+                          - row "size union 'md' size" [ref=f2e407]:
+                            - cell "size" [ref=f2e408]
+                            - cell "union" [ref=f2e409]:
+                              - generic [ref=f2e412]: union
+                            - cell "'md'" [ref=f2e413]:
+                              - generic [ref=f2e415]: "'md'"
+                            - cell "size" [ref=f2e416]:
+                              - group "size" [ref=f2e417]:
+                                - generic [ref=f2e418]: size
+                                - generic [ref=f2e419] [cursor=pointer]:
+                                  - radio "sm" [ref=f2e420]
+                                  - generic [ref=f2e421]: sm
+                                - generic [ref=f2e422] [cursor=pointer]:
+                                  - radio "md" [ref=f2e423]
+                                  - generic [ref=f2e424]: md
+                                - generic [ref=f2e425] [cursor=pointer]:
+                                  - radio "lg" [ref=f2e426]
+                                  - generic [ref=f2e427]: lg
+                    - heading "Stories" [level=2] [ref=f2e428]:
+                      - link [ref=f2e429] [cursor=pointer]:
+                        - /url: "#stories"
+                      - text: Stories
+                    - generic [ref=f2e430]:
+                      - heading "Top" [level=3] [ref=f2e431]:
+                        - link [ref=f2e432] [cursor=pointer]:
+                          - /url: "#top"
+                        - text: Top
+                      - generic [ref=f2e442]: i
+                      - generic [ref=f2e444]:
+                        - switch "Show code" [ref=f2e445] [cursor=pointer]:
+                          - img [ref=f2e446]
+                          - text: Show code
+                        - button "Copy code" [ref=f2e448] [cursor=pointer]:
+                          - img [ref=f2e449]
+                          - text: Copy code
+                    - generic [ref=f2e451]:
+                      - heading "Bottom" [level=3] [ref=f2e452]:
+                        - link [ref=f2e453] [cursor=pointer]:
+                          - /url: "#bottom"
+                        - text: Bottom
+                      - generic [ref=f2e463]: i
+                      - generic [ref=f2e465]:
+                        - switch "Show code" [ref=f2e466] [cursor=pointer]:
+                          - img [ref=f2e467]
+                          - text: Show code
+                        - button "Copy code" [ref=f2e469] [cursor=pointer]:
+                          - img [ref=f2e470]
+                          - text: Copy code
+                    - generic [ref=f2e472]:
+                      - heading "Left" [level=3] [ref=f2e473]:
+                        - link [ref=f2e474] [cursor=pointer]:
+                          - /url: "#left"
+                        - text: Left
+                      - generic [ref=f2e484]: i
+                      - generic [ref=f2e486]:
+                        - switch "Show code" [ref=f2e487] [cursor=pointer]:
+                          - img [ref=f2e488]
+                          - text: Show code
+                        - button "Copy code" [ref=f2e490] [cursor=pointer]:
+                          - img [ref=f2e491]
+                          - text: Copy code
+                    - generic [ref=f2e493]:
+                      - heading "Right" [level=3] [ref=f2e494]:
+                        - link [ref=f2e495] [cursor=pointer]:
+                          - /url: "#right"
+                        - text: Right
+                      - generic [ref=f2e505]: i
+                      - generic [ref=f2e507]:
+                        - switch "Show code" [ref=f2e508] [cursor=pointer]:
+                          - img [ref=f2e509]
+                          - text: Show code
+                        - button "Copy code" [ref=f2e511] [cursor=pointer]:
+                          - img [ref=f2e512]
+                          - text: Copy code
+                    - generic [ref=f2e514]:
+                      - heading "Small" [level=3] [ref=f2e515]:
+                        - link [ref=f2e516] [cursor=pointer]:
+                          - /url: "#small"
+                        - text: Small
+                      - generic [ref=f2e526]: i
+                      - generic [ref=f2e528]:
+                        - switch "Show code" [ref=f2e529] [cursor=pointer]:
+                          - img [ref=f2e530]
+                          - text: Show code
+                        - button "Copy code" [ref=f2e532] [cursor=pointer]:
+                          - img [ref=f2e533]
+                          - text: Copy code
+                    - generic [ref=f2e535]:
+                      - heading "Large" [level=3] [ref=f2e536]:
+                        - link [ref=f2e537] [cursor=pointer]:
+                          - /url: "#large"
+                        - text: Large
+                      - generic [ref=f2e547]: i
+                      - generic [ref=f2e549]:
+                        - switch "Show code" [ref=f2e550] [cursor=pointer]:
+                          - img [ref=f2e551]
+                          - text: Show code
+                        - button "Copy code" [ref=f2e553] [cursor=pointer]:
+                          - img [ref=f2e554]
+                          - text: Copy code
+  - button "Open Next.js Dev Tools" [ref=e56] [cursor=pointer]:
+    - img [ref=e57]
+  - alert [ref=e60]

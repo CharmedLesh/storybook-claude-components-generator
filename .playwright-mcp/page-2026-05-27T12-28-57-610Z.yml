@@ -1,0 +1,371 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e5]:
+          - heading "Claude Components" [level=1] [ref=e6]
+          - paragraph [ref=e7]:
+            - text: Writes to
+            - code [ref=e8]: src/generated/
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - generic [ref=e11]: Model
+            - combobox "Model" [ref=e12]:
+              - option "Opus 4.7"
+              - option "Sonnet 4.6" [selected]
+              - option "Haiku 4.5"
+          - button "Clear" [disabled] [ref=e13]
+      - generic [ref=e14]:
+        - heading "Pick a default model" [level=2] [ref=e15]
+        - paragraph [ref=e16]: You can change this any time in the header.
+        - generic [ref=e17]:
+          - generic [ref=e18] [cursor=pointer]:
+            - radio "Opus 4.7 Highest quality. Best for complex components." [ref=e19]
+            - generic [ref=e20]:
+              - generic [ref=e21]: Opus 4.7
+              - generic [ref=e22]: Highest quality. Best for complex components.
+          - generic [ref=e23] [cursor=pointer]:
+            - radio "Sonnet 4.6 Balanced speed and quality. Good default." [checked] [ref=e24]
+            - generic [ref=e25]:
+              - generic [ref=e26]: Sonnet 4.6
+              - generic [ref=e27]: Balanced speed and quality. Good default.
+          - generic [ref=e28] [cursor=pointer]:
+            - radio "Haiku 4.5 Fastest and cheapest. Good for small tweaks." [ref=e29]
+            - generic [ref=e30]:
+              - generic [ref=e31]: Haiku 4.5
+              - generic [ref=e32]: Fastest and cheapest. Good for small tweaks.
+        - button "Use Sonnet 4.6" [ref=e33]
+      - generic [ref=e35]:
+        - textbox "Describe the component you want. Cmd/Ctrl+Enter to send." [ref=e36]
+        - generic [ref=e37]:
+          - generic [ref=e38]: Cmd/Ctrl + Enter to send
+          - button "Send" [disabled] [ref=e39]
+    - separator "Drag to resize panels" [ref=e40]
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Storybook
+          - generic [ref=e46]: http://localhost:6006
+        - generic [ref=e47]:
+          - button "Reload" [ref=e48]
+          - link "Open" [ref=e49] [cursor=pointer]:
+            - /url: http://localhost:6006
+      - iframe [active] [ref=e50]:
+        - generic [ref=f3e3]:
+          - generic [ref=f3e4]:
+            - banner "Storybook" [ref=f3e6]:
+              - heading "Storybook" [level=1] [ref=f3e7]
+              - img
+              - generic [ref=f3e10]:
+                - generic [ref=f3e11]:
+                  - generic [ref=f3e12]:
+                    - generic [ref=f3e13]:
+                      - link "Skip to content" [ref=f3e14] [cursor=pointer]:
+                        - /url: "#storybook-preview-wrapper"
+                      - link "Storybook" [ref=f3e16] [cursor=pointer]:
+                        - /url: ./
+                        - img "Storybook" [ref=f3e17]
+                      - switch "Settings" [ref=f3e22] [cursor=pointer]:
+                        - img [ref=f3e23]
+                    - generic [ref=f3e73]:
+                      - generic [ref=f3e75] [cursor=pointer]:
+                        - button "Open onboarding guide" [ref=f3e79]:
+                          - img [ref=f3e81]
+                          - strong [ref=f3e83]: Get started
+                        - generic [ref=f3e84]:
+                          - button "Collapse onboarding guide" [expanded] [ref=f3e85]:
+                            - img [ref=f3e86]
+                          - button "29% completed" [ref=f3e88]:
+                            - generic [ref=f3e89]:
+                              - img [ref=f3e90]
+                              - img [ref=f3e92]
+                            - generic [ref=f3e95]: 29%
+                      - list [ref=f3e97]:
+                        - listitem [ref=f3e98]:
+                          - button "Open onboarding guide for Set up with AI" [ref=f3e99] [cursor=pointer]:
+                            - img [ref=f3e101]
+                            - generic [ref=f3e105]: Set up with AI
+                          - button "Copy prompt"
+                        - listitem [ref=f3e106]:
+                          - button "Open onboarding guide for Check responsiveness with Viewports" [ref=f3e107] [cursor=pointer]:
+                            - img [ref=f3e109]
+                            - generic [ref=f3e112]: Check responsiveness with Viewports
+                        - listitem [ref=f3e113]:
+                          - button "Open onboarding guide for Share your Storybook for feedback" [ref=f3e114] [cursor=pointer]:
+                            - img [ref=f3e116]
+                            - generic [ref=f3e119]: Share your Storybook for feedback
+                          - button "Share"
+                  - generic [ref=f3e26]: Search for components
+                  - search [ref=f3e27]:
+                    - combobox "Search for components" [ref=f3e28]:
+                      - generic:
+                        - img
+                      - searchbox "Search for components" [ref=f3e29]
+                      - code: ⌃ K
+                      - button "Tag filters" [ref=f3e121] [cursor=pointer]:
+                        - img [ref=f3e122]
+                    - button "Create a new story" [ref=f3e30] [cursor=pointer]:
+                      - img [ref=f3e31]
+                  - switch "Review new stories" [ref=f3e125] [cursor=pointer]:
+                    - img [ref=f3e126]
+                    - text: Review new stories
+                  - navigation "Stories" [ref=f3e34]:
+                    - heading "Stories" [level=2] [ref=f3e35]
+                    - generic [ref=f3e128]:
+                      - generic [ref=f3e129]:
+                        - button "Welcome" [ref=f3e130] [cursor=pointer]:
+                          - generic [ref=f3e131]:
+                            - img [ref=f3e133]
+                            - img [ref=f3e135]
+                          - text: Welcome
+                        - 'button "Change status: New" [ref=f3e137] [cursor=pointer]':
+                          - img [ref=f3e138]
+                      - link "Configure your project" [ref=f3e141] [cursor=pointer]:
+                        - /url: /?path=/docs/configure-your-project--docs
+                        - img [ref=f3e143]
+                        - text: Configure your project
+                      - generic [ref=f3e145]:
+                        - button "Collapse" [expanded] [ref=f3e146] [cursor=pointer]:
+                          - img [ref=f3e148]
+                          - text: Components
+                        - button "Collapse all" [ref=f3e371] [cursor=pointer]:
+                          - img [ref=f3e372]
+                      - generic [ref=f3e153]:
+                        - button "Toggler" [expanded] [ref=f3e154] [cursor=pointer]:
+                          - generic [ref=f3e155]:
+                            - img [ref=f3e157]
+                            - img [ref=f3e159]
+                          - text: Toggler
+                        - 'button "Change status: New" [ref=f3e161] [cursor=pointer]':
+                          - img [ref=f3e162]
+                      - link "Docs" [ref=f3e165] [cursor=pointer]:
+                        - /url: /?path=/docs/components-toggler--docs
+                        - img [ref=f3e167]
+                        - text: Docs
+                      - generic [ref=f3e170]:
+                        - link "No Label" [ref=f3e171] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--no-label
+                          - img [ref=f3e173]
+                          - text: No Label
+                        - 'button "Change status: New" [ref=f3e175] [cursor=pointer]':
+                          - img [ref=f3e176]
+                      - generic [ref=f3e178]:
+                        - link "Label Top" [ref=f3e179] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--label-top
+                          - img [ref=f3e181]
+                          - text: Label Top
+                        - 'button "Change status: New" [ref=f3e183] [cursor=pointer]':
+                          - img [ref=f3e184]
+                      - generic [ref=f3e186]:
+                        - link "Label Left" [ref=f3e187] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--label-left
+                          - img [ref=f3e189]
+                          - text: Label Left
+                        - 'button "Change status: New" [ref=f3e191] [cursor=pointer]':
+                          - img [ref=f3e192]
+                      - generic [ref=f3e194]:
+                        - link "Label Right" [ref=f3e195] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--label-right
+                          - img [ref=f3e197]
+                          - text: Label Right
+                        - 'button "Change status: New" [ref=f3e199] [cursor=pointer]':
+                          - img [ref=f3e200]
+                      - generic [ref=f3e202]:
+                        - link "Disabled" [ref=f3e203] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--disabled
+                          - img [ref=f3e205]
+                          - text: Disabled
+                        - 'button "Change status: New" [ref=f3e207] [cursor=pointer]':
+                          - img [ref=f3e208]
+                      - generic [ref=f3e210]:
+                        - link "Disabled Checked" [ref=f3e211] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--disabled-checked
+                          - img [ref=f3e213]
+                          - text: Disabled Checked
+                        - 'button "Change status: New" [ref=f3e215] [cursor=pointer]':
+                          - img [ref=f3e216]
+                      - generic [ref=f3e218]:
+                        - link "Small" [ref=f3e219] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--small
+                          - img [ref=f3e221]
+                          - text: Small
+                        - 'button "Change status: New" [ref=f3e223] [cursor=pointer]':
+                          - img [ref=f3e224]
+                      - generic [ref=f3e226]:
+                        - link "Large" [ref=f3e227] [cursor=pointer]:
+                          - /url: /?path=/story/components-toggler--large
+                          - img [ref=f3e229]
+                          - text: Large
+                        - 'button "Change status: New" [ref=f3e231] [cursor=pointer]':
+                          - img [ref=f3e232]
+                      - generic [ref=f3e234]:
+                        - button "Tooltip" [expanded] [active] [ref=f3e235] [cursor=pointer]:
+                          - generic [ref=f3e236]:
+                            - img [ref=f3e238]
+                            - img [ref=f3e240]
+                          - text: Tooltip
+                        - button "Open context menu" [ref=f3e374] [cursor=pointer]:
+                          - img [ref=f3e375]
+                      - generic [ref=f3e377]:
+                        - link "Docs" [ref=f3e378] [cursor=pointer]:
+                          - /url: /?path=/docs/components-tooltip--docs
+                          - img [ref=f3e380]
+                          - text: Docs
+                        - link "Skip to content" [ref=f3e382] [cursor=pointer]:
+                          - /url: "#storybook-preview-wrapper"
+                      - generic [ref=f3e383]:
+                        - link "Top" [ref=f3e384] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--top
+                          - img [ref=f3e386]
+                          - text: Top
+                        - 'button "Change status: New" [ref=f3e388] [cursor=pointer]':
+                          - img [ref=f3e389]
+                      - generic [ref=f3e391]:
+                        - link "Bottom" [ref=f3e392] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--bottom
+                          - img [ref=f3e394]
+                          - text: Bottom
+                        - 'button "Change status: New" [ref=f3e396] [cursor=pointer]':
+                          - img [ref=f3e397]
+                      - generic [ref=f3e399]:
+                        - link "Left" [ref=f3e400] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--left
+                          - img [ref=f3e402]
+                          - text: Left
+                        - 'button "Change status: New" [ref=f3e404] [cursor=pointer]':
+                          - img [ref=f3e405]
+                      - generic [ref=f3e407]:
+                        - link "Right" [ref=f3e408] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--right
+                          - img [ref=f3e410]
+                          - text: Right
+                        - 'button "Change status: New" [ref=f3e412] [cursor=pointer]':
+                          - img [ref=f3e413]
+                      - generic [ref=f3e415]:
+                        - link "Small" [ref=f3e416] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--small
+                          - img [ref=f3e418]
+                          - text: Small
+                        - 'button "Change status: New" [ref=f3e420] [cursor=pointer]':
+                          - img [ref=f3e421]
+                      - generic [ref=f3e423]:
+                        - link "Large" [ref=f3e424] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--large
+                          - img [ref=f3e426]
+                          - text: Large
+                        - 'button "Change status: New" [ref=f3e428] [cursor=pointer]':
+                          - img [ref=f3e429]
+                      - generic [ref=f3e431]:
+                        - link "Custom Trigger" [ref=f3e432] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--custom-trigger
+                          - img [ref=f3e434]
+                          - text: Custom Trigger
+                        - 'button "Change status: New" [ref=f3e436] [cursor=pointer]':
+                          - img [ref=f3e437]
+                      - generic [ref=f3e439]:
+                        - link "All Positions" [ref=f3e440] [cursor=pointer]:
+                          - /url: /?path=/story/components-tooltip--all-positions
+                          - img [ref=f3e442]
+                          - text: All Positions
+                        - 'button "Change status: New" [ref=f3e444] [cursor=pointer]':
+                          - img [ref=f3e445]
+                      - generic [ref=f3e245]:
+                        - button "Collapse" [expanded] [ref=f3e246] [cursor=pointer]:
+                          - img [ref=f3e248]
+                          - text: Example
+                        - button "Expand all" [ref=f3e250] [cursor=pointer]:
+                          - img [ref=f3e251]
+                      - generic [ref=f3e253]:
+                        - button "Button" [ref=f3e254] [cursor=pointer]:
+                          - generic [ref=f3e255]:
+                            - img [ref=f3e257]
+                            - img [ref=f3e259]
+                          - text: Button
+                        - 'button "Change status: New" [ref=f3e261] [cursor=pointer]':
+                          - img [ref=f3e262]
+                      - generic [ref=f3e264]:
+                        - button "Header" [ref=f3e265] [cursor=pointer]:
+                          - generic [ref=f3e266]:
+                            - img [ref=f3e268]
+                            - img [ref=f3e270]
+                          - text: Header
+                        - 'button "Change status: New" [ref=f3e272] [cursor=pointer]':
+                          - img [ref=f3e273]
+                      - generic [ref=f3e275]:
+                        - button "Page" [ref=f3e276] [cursor=pointer]:
+                          - generic [ref=f3e277]:
+                            - img [ref=f3e279]
+                            - img [ref=f3e281]
+                          - text: Page
+                        - 'button "Change status: New" [ref=f3e283] [cursor=pointer]':
+                          - img [ref=f3e284]
+                - region "Component tests" [ref=f3e287]:
+                  - generic [ref=f3e288]:
+                    - heading "Component tests" [level=2] [ref=f3e289]
+                    - generic [ref=f3e290] [cursor=pointer]:
+                      - button "Run tests" [ref=f3e294]:
+                        - img [ref=f3e296]
+                        - text: Run tests
+                      - generic [ref=f3e299]:
+                        - button "Expand testing module" [ref=f3e300]:
+                          - img [ref=f3e301]
+                        - button "Clear all statuses" [ref=f3e303]:
+                          - img [ref=f3e304]
+                    - generic [ref=f3e307]:
+                      - generic [ref=f3e310]:
+                        - generic [ref=f3e311]: Visual tests
+                        - button "Set up visual tests" [ref=f3e313]
+                      - generic [ref=f3e315]:
+                        - generic [ref=f3e316]:
+                          - generic [ref=f3e317]:
+                            - generic [ref=f3e318]: Run component tests
+                            - generic [ref=f3e319]: Not run
+                          - generic [ref=f3e320]:
+                            - switch "Watch mode" [ref=f3e321] [cursor=pointer]:
+                              - img [ref=f3e322]
+                            - button "Start test run" [ref=f3e325] [cursor=pointer]:
+                              - img [ref=f3e326]
+                        - list [ref=f3e328]:
+                          - listitem [ref=f3e329]:
+                            - generic [ref=f3e330]:
+                              - checkbox "Interactions" [checked] [disabled] [ref=f3e332]
+                              - generic [ref=f3e333]: Interactions
+                            - button "Run tests to see results" [disabled] [ref=f3e334]
+                          - listitem [ref=f3e336]:
+                            - generic [ref=f3e337] [cursor=pointer]:
+                              - checkbox "Coverage" [ref=f3e339]
+                              - generic [ref=f3e340]: Coverage
+                            - button "Coverage unavailable, run tests first" [disabled] [ref=f3e341]
+                          - listitem [ref=f3e343]:
+                            - generic [ref=f3e344] [cursor=pointer]:
+                              - checkbox "Accessibility" [ref=f3e346]
+                              - generic [ref=f3e347]: Accessibility
+                            - button "Run tests to see accessibility results" [disabled] [ref=f3e348]
+            - separator "Sidebar resize handle" [ref=f3e55]
+          - generic [ref=f3e57]:
+            - region "Toolbar" [ref=f3e58]:
+              - heading "Toolbar" [level=2] [ref=f3e59]
+              - toolbar [ref=f3e60]:
+                - generic [ref=f3e350]:
+                  - switch "Grid visibility" [ref=f3e351] [cursor=pointer]:
+                    - img [ref=f3e352]
+                  - button "Preview background" [ref=f3e354] [cursor=pointer]:
+                    - img [ref=f3e355]
+                  - switch "Outline tool" [ref=f3e358] [cursor=pointer]:
+                    - img [ref=f3e359]
+                - generic [ref=f3e361]:
+                  - button "Enter full screen" [ref=f3e362] [cursor=pointer]:
+                    - img [ref=f3e363]
+                  - button "Open in editor" [ref=f3e365] [cursor=pointer]:
+                    - img [ref=f3e366]
+                  - button "Share" [ref=f3e369] [cursor=pointer]
+            - main "Main preview area" [ref=f3e61]:
+              - heading "Main preview area" [level=2] [ref=f3e62]
+              - generic [ref=f3e66]:
+                - link "Skip to sidebar" [ref=f3e370] [cursor=pointer]:
+                  - /url: "#components-tooltip--docs"
+                - iframe [ref=f3e70]:
+                  
+  - button "Open Next.js Dev Tools" [ref=e56] [cursor=pointer]:
+    - img [ref=e57]
+  - alert [ref=e60]

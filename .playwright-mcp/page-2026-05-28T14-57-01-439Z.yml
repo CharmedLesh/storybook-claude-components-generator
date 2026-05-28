@@ -1,0 +1,16 @@
+- generic [ref=e3]:
+  - combobox [expanded] [active] [ref=e4]:
+    - generic [ref=e5]: Cherry
+    - img [ref=e6]
+  - listbox [ref=e8]:
+    - option "Apple" [ref=e9] [cursor=pointer]:
+      - generic [ref=e10]: Apple
+    - option "Banana" [ref=e11] [cursor=pointer]:
+      - generic [ref=e12]: Banana
+    - option "Cherry" [selected] [ref=e13] [cursor=pointer]:
+      - generic [ref=e14]: Cherry
+      - img [ref=e15]
+    - option "Durian" [ref=e17] [cursor=pointer]:
+      - generic [ref=e18]: Durian
+    - option "Elderberry" [ref=e19] [cursor=pointer]:
+      - generic [ref=e20]: Elderberry

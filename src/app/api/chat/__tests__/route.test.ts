@@ -1,12 +1,16 @@
 import { describe, expect, it, vi, beforeEach } from 'vitest';
+import type { Query } from '@anthropic-ai/claude-agent-sdk';
 import { summarizeToolResult, truncate } from '../route';
 
 vi.mock('@anthropic-ai/claude-agent-sdk', () => ({
   query: vi.fn(),
 }));
 
-async function* fakeStream(...messages: unknown[]) {
-  for (const msg of messages) yield msg;
+function fakeStream(...messages: unknown[]): Query {
+  async function* gen() {
+    for (const msg of messages) yield msg;
+  }
+  return gen() as unknown as Query;
 }
 
 async function readSSEEvents(res: Response): Promise<Record<string, unknown>[]> {
@@ -526,7 +530,7 @@ describe('POST /api/chat', () => {
       mockQuery.mockReturnValue(
         (async function* () {
           throw new Error('SDK connection failed');
-        })(),
+        })() as unknown as Query,
       );
 
       const res = await callPost({ prompt: 'hello' });
@@ -542,7 +546,7 @@ describe('POST /api/chat', () => {
       mockQuery.mockReturnValue(
         (async function* () {
           throw 'raw string error';
-        })(),
+        })() as unknown as Query,
       );
 
       const res = await callPost({ prompt: 'hello' });

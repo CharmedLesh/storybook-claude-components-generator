@@ -5,6 +5,23 @@ import type { CanUseTool, Options, PermissionResult } from '@anthropic-ai/claude
 import { AVAILABLE_MODELS, type ModelId } from './models';
 
 export const GENERATED_DIR = path.resolve(process.cwd(), 'src', 'generated');
+export const GLOBALS_CSS = path.resolve(process.cwd(), 'src', 'app', 'globals.css');
+
+/**
+ * Bump globals.css mtime to trigger Vite -> PostCSS -> Tailwind v4 rescan.
+ * Tailwind's @tailwindcss/postcss plugin doesn't reliably notice classes in
+ * directories created mid-session; touching the CSS entrypoint forces a
+ * full content walk that picks them up. Best-effort: a dev convenience that
+ * must never fail the API response.
+ */
+export async function nudgeTailwindRescan(): Promise<void> {
+  const now = new Date();
+  try {
+    await fs.utimes(GLOBALS_CSS, now, now);
+  } catch {
+    // ignore
+  }
+}
 
 export function isValidModel(id: string): id is ModelId {
   return AVAILABLE_MODELS.some((m) => m.id === id);

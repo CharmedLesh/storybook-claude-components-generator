@@ -3,9 +3,18 @@ import { describe, expect, it, vi, beforeEach, afterEach } from 'vitest';
 import {
   isValidModel,
   buildAgentEnv,
-  canUseToolSandboxed,
+  canUseToolSandboxed as canUseToolSandboxedRaw,
   GENERATED_DIR,
 } from '../agent';
+
+const canUseToolSandboxed = (
+  toolName: string,
+  input: Record<string, unknown>,
+) =>
+  canUseToolSandboxedRaw(toolName, input, {
+    signal: new AbortController().signal,
+    toolUseID: 'test-tool-use-id',
+  });
 
 // ---------- isValidModel ----------
 

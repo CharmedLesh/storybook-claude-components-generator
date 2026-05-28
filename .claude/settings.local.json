@@ -38,7 +38,32 @@
       "Bash(awk '/can_use_tool/{found=1} found{print; if\\(++count>5\\) exit}' node_modules/@anthropic-ai/claude-agent-sdk/sdk.mjs)",
       "Bash(grep -ohE 'can_use_tool[^,}]{0,300}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
       "Bash(grep -ohE 'permission.{0,10}result|can_use_tool.{0,200}schema|safeParse[^,]{0,200}' node_modules/@anthropic-ai/claude-agent-sdk/assistant.mjs)",
-      "Bash(npx vitest *)"
+      "Bash(npx vitest *)",
+      "Bash(npm test *)",
+      "Bash(node *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read|Grep|Edit|Write|Glob|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/protect-env.js\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/typecheck.js\""
+          }
+        ]
+      }
     ]
   }
 }

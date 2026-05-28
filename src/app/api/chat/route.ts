@@ -5,6 +5,7 @@ import {
   detectClaudeAuth,
   ensureGeneratedDir,
   isValidModel,
+  nudgeTailwindRescan,
 } from '@/lib/agent';
 import { DEFAULT_MODEL } from '@/lib/models';
 
@@ -90,6 +91,8 @@ export async function POST(req: NextRequest) {
         }),
       });
 
+      let agentWroteFiles = false;
+
       try {
         send({ type: 'start', model });
 
@@ -126,6 +129,13 @@ export async function POST(req: NextRequest) {
             case 'assistant': {
               for (const block of msg.message.content) {
                 if (block.type === 'tool_use') {
+                  if (
+                    block.name === 'Write' ||
+                    block.name === 'Edit' ||
+                    block.name === 'MultiEdit'
+                  ) {
+                    agentWroteFiles = true;
+                  }
                   send({
                     type: 'tool_use',
                     id: block.id,
@@ -185,10 +195,12 @@ export async function POST(req: NextRequest) {
           }
         }
 
+        if (agentWroteFiles) await nudgeTailwindRescan();
         controller.close();
       } catch (err) {
         const message = err instanceof Error ? err.message : String(err);
         send({ type: 'error', message });
+        if (agentWroteFiles) await nudgeTailwindRescan();
         controller.close();
       }
     },

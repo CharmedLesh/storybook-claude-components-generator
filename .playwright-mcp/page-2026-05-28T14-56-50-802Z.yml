@@ -1,0 +1,67 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - banner "Storybook" [ref=e6]:
+      - heading "Storybook" [level=1] [ref=e7]
+      - img
+      - generic [ref=e11]:
+        - generic [ref=e13]:
+          - link "Skip to content" [ref=e14] [cursor=pointer]:
+            - /url: "#storybook-preview-wrapper"
+          - link "Storybook" [ref=e16] [cursor=pointer]:
+            - /url: ./
+            - img "Storybook" [ref=e17]
+          - switch "Settings" [ref=e22] [cursor=pointer]:
+            - img [ref=e23]
+        - generic [ref=e26]: Search for components
+        - search [ref=e27]:
+          - combobox "Search for components" [ref=e28]:
+            - generic:
+              - img
+            - searchbox "Search for components" [ref=e29]
+            - code: ⌃ K
+          - button "Create a new story" [ref=e30] [cursor=pointer]:
+            - img [ref=e31]
+        - navigation "Stories" [ref=e34]:
+          - heading "Stories" [level=2] [ref=e35]
+    - separator "Sidebar resize handle" [ref=e55]
+  - generic [ref=e57]:
+    - region "Toolbar" [ref=e58]:
+      - heading "Toolbar" [level=2] [ref=e59]
+      - toolbar [ref=e60]:
+        - button "Reload story" [ref=e62] [cursor=pointer]:
+          - img [ref=e63]
+        - generic [ref=e65]:
+          - button "Open in isolation mode" [ref=e66] [cursor=pointer]:
+            - img [ref=e67]
+          - switch "Change zoom level" [ref=e72] [cursor=pointer]: 100%
+          - button "Enter full screen" [ref=e73] [cursor=pointer]:
+            - img [ref=e74]
+    - main "Main preview area" [ref=e76]:
+      - heading "Main preview area" [level=2] [ref=e77]
+      - generic [ref=e78]:
+        - progressbar "Content is loading..." [ref=e80]
+        - generic [ref=e81]:
+          - link "Skip to sidebar" [ref=e82] [cursor=pointer]:
+            - /url: "#components-dropdown--with-default-value"
+          - iframe [ref=e86]:
+            
+  - generic [ref=e87]:
+    - separator "Addon panel resize handle" [ref=e88]
+    - region "Addon panel" [ref=e90]:
+      - heading "Addon panel" [level=2] [ref=e91]
+      - generic [ref=e92]:
+        - generic [ref=e94]:
+          - button "Move addon panel to right" [ref=e95] [cursor=pointer]:
+            - img [ref=e96]
+          - button "Hide addon panel" [ref=e99] [cursor=pointer]:
+            - img [ref=e100]
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e105]: Storybook add-ons
+            - generic [ref=e106]: Integrate your tools with Storybook to connect workflows and unlock advanced features.
+          - link "Explore integrations catalog" [ref=e108] [cursor=pointer]:
+            - /url: https://storybook.js.org/addons?ref=ui
+            - generic [ref=e109]:
+              - img [ref=e110]
+              - text: Explore integrations catalog
+              - img [ref=e113]

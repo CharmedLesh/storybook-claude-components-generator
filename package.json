@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "typecheck": "tsc --noEmit",
     "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build",
     "dev:all": "concurrently --names \"NEXT,STORYBOOK\" --prefix-colors \"cyan,magenta\" \"npm:dev\" \"npm:storybook\"",

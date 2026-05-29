@@ -1,6 +1,8 @@
 ---
 name: commit
 description: Use this skill whenever the user asks to commit changes, stage and commit files, or says things like "commit everything", "commit my changes", "make a commit", or "git commit". This skill runs `git add .` to stage all changes, inspects the diff to generate a concise descriptive commit message, then commits with that message — all without asking the user to supply the message themselves.
+allowed-tolls: Read, Grep, Glob, Bash
+model: sonnet
 ---
 
 # Commit Skill
